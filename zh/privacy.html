@@ -17,7 +17,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <body>
 
 <h1>Mycomi 隐私政策</h1>
-<p class="meta">最后更新：2026年6月25日</p>
+<p class="meta">最后更新：2026年10月6日</p>
 
 <p>本政策说明当您使用 <strong>Mycomi</strong> 应用（“本应用”，一款面向全球的蘑菇识别与收藏应用）时，<strong>Nasib Fahim Fernández</strong>（西班牙）（“数据控制者”、“我们”）如何处理您的个人数据。我们遵守《欧盟第2016/679号条例》（<strong>GDPR</strong>）以及您所在国家适用的数据保护法律（见第10节）。</p>
 
@@ -29,6 +29,8 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>1. 我们处理的数据</h2>
 <table>
 <tr><th>类别</th><th>具体数据</th><th>来源</th></tr>
+<tr><td>账户数据</td><td>您 Google 账户的用户标识符、电子邮件地址、姓名和头像（登录时由 Google 提供；我们永远看不到您的密码）</td><td>使用 Google 登录</td></tr>
+<tr><td>使用计数</td><td>本月识别次数和已验证的高级版状态，与您的账户关联</td><td>使用本应用时生成</td></tr>
 <tr><td>资料数据</td><td>名称或昵称（可选）、国家、头像（预设图标；不会上传任何个人头像照片）</td><td>由您填写</td></tr>
 <tr><td>照片</td><td>您拍摄或选择的蘑菇图片</td><td>相机或相册</td></tr>
 <tr><td>位置</td><td>识别或“我的区域”时的 GPS 坐标</td><td>位置权限</td></tr>
@@ -36,10 +38,11 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <tr><td>技术数据</td><td>设备完整性证明（Play Integrity/App Check）及请求 IP</td><td>自动（安全）</td></tr>
 <tr><td>订阅数据</td><td>您的方案状态（免费或高级）及购买验证</td><td>Google Play（我们不接收您的银行卡信息）</td></tr>
 </table>
-<p class="small">我们<strong>不</strong>收集电子邮件、密码、电话、通讯录或<strong>支付数据</strong>（高级版购买由 Google Play 处理；我们仅得知您的订阅是否有效）。本应用<strong>无</strong>广告，<strong>不</strong>出于商业目的出售或共享您的数据。我们使用 <strong>Firebase Crashlytics</strong>（Google）记录崩溃以提升稳定性，并使用 <strong>Firebase Analytics</strong>（Google）以汇总方式了解使用情况；它们可能收集诊断数据、使用事件和设备标识符，由 Google 处理并加密传输；不用于个性化广告，您可以在<strong>设置中关闭使用分析</strong>。</p>
+<p class="small">我们<strong>不</strong>收集您的密码（登录由 Google 处理）、电话、通讯录或<strong>支付数据</strong>（高级版购买由 Google Play 处理；我们仅得知您的订阅是否有效）。本应用<strong>无</strong>广告，<strong>不</strong>出于商业目的出售或共享您的数据。我们使用 <strong>Firebase Crashlytics</strong>（Google）记录崩溃以提升稳定性，并使用 <strong>Firebase Analytics</strong>（Google）以汇总方式了解使用情况；它们可能收集诊断数据、使用事件和设备标识符，由 Google 处理并加密传输；不用于个性化广告，您可以在<strong>设置中关闭使用分析</strong>。</p>
 
 <h2>2. 您的数据存储在何处</h2>
 <ul>
+<li><strong>账户（Google Firebase）：</strong>您的 Google 账户、每月识别计数和已验证的高级版状态存储在 Firebase 中，因此即使更换手机，您的限额和订阅也能正常使用。</li>
 <li><strong>在您的设备上（主要）：</strong>资料、收藏、照片和发现记录<strong>本地</strong>存储。</li>
 <li><strong>云端同步（Google Firebase）：</strong>排行榜是<strong>高级订阅</strong>的功能；对于高级版用户，其<strong>名称或昵称、国家、头像和积分</strong>会被同步并在本应用内<strong>向其他用户公开显示</strong>。</li>
 </ul>
@@ -50,6 +53,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>3. 处理目的与法律依据</h2>
 <table>
 <tr><th>目的</th><th>数据</th><th>法律依据（GDPR 第6条及同等规定）</th></tr>
+<tr><td>创建和保护您的账户，并执行每月识别次数限制</td><td>账户数据、使用计数</td><td>履行服务及合法利益（防止滥用）</td></tr>
 <tr><td>用 AI 识别照片中的蘑菇</td><td>照片 + 位置</td><td>履行您请求的服务及您的同意（权限）</td></tr>
 <tr><td>显示您区域内的蘑菇（“我的区域”）</td><td>位置</td><td>同意</td></tr>
 <tr><td>保存收藏、积分与进度</td><td>使用数据</td><td>履行服务</td></tr>
@@ -61,7 +65,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>4. 我们与谁共享数据</h2>
 <ul>
-<li><strong>Google（Firebase AI Logic / Gemini API、App Check）：</strong>您的<strong>照片和坐标</strong>仅为<strong>执行识别</strong>并获取区域信息而发送至 Google 的 AI。<a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隐私</a> · <a href="https://policies.google.com/privacy" target="_blank">Google</a>。</li>
+<li><strong>Google（Firebase Authentication、Cloud Functions、Gemini API、App Check）：</strong>Google 负责处理您的登录；您的<strong>照片和坐标</strong>经由我们在 Google Cloud 上的服务器发送至 Google 的 AI，<strong>仅用于完成识别</strong>，不会保存在服务器上。 <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隐私</a> <a href="https://policies.google.com/privacy" target="_blank">Google</a></li>
 <li><strong>Wikimedia 基金会：</strong>本应用请求参考图片；可能记录您的 IP。<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Wikimedia 隐私</a>。</li>
 <li><strong>Google Play（结算）：</strong>处理高级订阅购买并向我们确认其状态。我们不接触您的支付方式。</li>
 </ul>
@@ -72,6 +76,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>6. 保留期限</h2>
 <ul>
+<li><strong>账户数据和使用计数：</strong>在您拥有账户期间保留；您在应用内删除账户后即被删除。</li>
 <li><strong>本地数据：</strong>在您删除或卸载本应用之前一直保留。</li>
 <li><strong>已同步数据（排行榜）：</strong>在您参与期间保留；删除资料即被移除。</li>
 <li><strong>发送给 AI 的照片：</strong>为识别而处理；我们不会将其保存在自有服务器上。</li>

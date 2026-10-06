@@ -17,7 +17,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <body>
 
 <h1>Datenschutzerklärung von Mycomi</h1>
-<p class="meta">Zuletzt aktualisiert: 25. Juni 2026</p>
+<p class="meta">Zuletzt aktualisiert: 6. Oktober 2026</p>
 
 <p>Diese Erklärung beschreibt, wie <strong>Nasib Fahim Fernández</strong> (Spanien) (der „Verantwortliche“, „wir“) Ihre personenbezogenen Daten verarbeitet, wenn Sie die App <strong>Mycomi</strong> (die „App“) nutzen, eine international verfügbare App zur Pilzbestimmung und -sammlung. Wir halten die Verordnung (EU) 2016/679 (<strong>DSGVO</strong>) und die in Ihrem Land geltenden Datenschutzgesetze ein (siehe Abschnitt 10).</p>
 
@@ -29,6 +29,8 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>1. Daten, die wir verarbeiten</h2>
 <table>
 <tr><th>Kategorie</th><th>Konkrete Daten</th><th>Herkunft</th></tr>
+<tr><td>Kontodaten</td><td>Nutzer-ID, E-Mail-Adresse, Name und Foto Ihres Google-Kontos (von Google bei der Anmeldung bereitgestellt; Ihr Passwort sehen wir nie)</td><td>Anmeldung mit Google</td></tr>
+<tr><td>Nutzungszähler</td><td>Anzahl der Bestimmungen im Monat und geprüfter Premium-Status, verknüpft mit Ihrem Konto</td><td>Bei der Nutzung der App erzeugt</td></tr>
 <tr><td>Profildaten</td><td>Name oder Alias (optional), Land, Avatar (vordefiniertes Symbol; es wird kein Profilfoto hochgeladen)</td><td>Von Ihnen eingegeben</td></tr>
 <tr><td>Fotos</td><td>Bilder von Pilzen, die Sie aufnehmen oder auswählen</td><td>Kamera oder Galerie</td></tr>
 <tr><td>Standort</td><td>GPS-Koordinaten zum Zeitpunkt der Bestimmung oder von „Meine Zone“</td><td>Standortberechtigung</td></tr>
@@ -36,10 +38,11 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <tr><td>Technische Daten</td><td>Geräteintegritäts-Attestierung (Play Integrity/App Check) und IP der Anfragen</td><td>Automatisch (Sicherheit)</td></tr>
 <tr><td>Abodaten</td><td>Status Ihres Tarifs (kostenlos oder Premium) und Kaufvalidierung</td><td>Google Play (wir erhalten keine Kartendaten)</td></tr>
 </table>
-<p class="small">Wir erheben <strong>keine</strong> E-Mail, kein Passwort, keine Telefonnummer, keine Kontakte und keine <strong>Zahlungsdaten</strong> (Premium-Käufe werden von Google Play abgewickelt; wir erfahren nur, ob Ihr Abo aktiv ist). Die App enthält <strong>keine</strong> Werbung und <strong>verkauft</strong> oder teilt Ihre Daten nicht zu kommerziellen Zwecken. Wir nutzen <strong>Firebase Crashlytics</strong> (Google), um Abstürze zu erfassen und die Stabilität zu verbessern, und <strong>Firebase Analytics</strong> (Google), um die Nutzung aggregiert zu verstehen; dabei können Diagnosedaten, Nutzungsereignisse und Gerätekennungen erfasst werden, verarbeitet von Google und verschlüsselt übertragen; sie dienen nicht der personalisierten Werbung und Sie können die <strong>Nutzungsanalyse in den Einstellungen deaktivieren</strong>.</p>
+<p class="small">Wir erheben <strong>kein</strong> Passwort (die Anmeldung erfolgt über Google), keine Telefonnummer, keine Kontakte und keine <strong>Zahlungsdaten</strong> (Premium-Käufe werden von Google Play abgewickelt; wir erfahren nur, ob Ihr Abo aktiv ist). Die App enthält <strong>keine</strong> Werbung und <strong>verkauft</strong> oder teilt Ihre Daten nicht zu kommerziellen Zwecken. Wir nutzen <strong>Firebase Crashlytics</strong> (Google), um Abstürze zu erfassen und die Stabilität zu verbessern, und <strong>Firebase Analytics</strong> (Google), um die Nutzung aggregiert zu verstehen; dabei können Diagnosedaten, Nutzungsereignisse und Gerätekennungen erfasst werden, verarbeitet von Google und verschlüsselt übertragen; sie dienen nicht der personalisierten Werbung und Sie können die <strong>Nutzungsanalyse in den Einstellungen deaktivieren</strong>.</p>
 
 <h2>2. Wo Ihre Daten gespeichert werden</h2>
 <ul>
+<li><strong>Konto (Google Firebase):</strong> Ihr Google-Konto, Ihr monatlicher Bestimmungszähler und Ihr geprüfter Premium-Status werden in Firebase gespeichert, damit Limit und Abo auch nach einem Handywechsel funktionieren.</li>
 <li><strong>Auf Ihrem Gerät (primär):</strong> Profil, Sammlung, Fotos und Funde werden <strong>lokal</strong> gespeichert.</li>
 <li><strong>Cloud-Synchronisation (Google Firebase):</strong> die Rangliste ist eine Funktion des <strong>Premium-Abos</strong>; bei Premium-Nutzern werden <strong>Name oder Alias, Land, Avatar und Punkte</strong> synchronisiert und <strong>anderen Nutzern öffentlich</strong> in der App angezeigt.</li>
 </ul>
@@ -50,6 +53,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>3. Zwecke und Rechtsgrundlagen</h2>
 <table>
 <tr><th>Zweck</th><th>Daten</th><th>Rechtsgrundlage (Art. 6 DSGVO und Entsprechungen)</th></tr>
+<tr><td>Ihr Konto erstellen und schützen und das monatliche Bestimmungslimit anwenden</td><td>Kontodaten, Nutzungszähler</td><td>Erfüllung des Dienstes und berechtigtes Interesse (Missbrauchsverhinderung)</td></tr>
 <tr><td>Pilz auf Ihrem Foto per KI bestimmen</td><td>Foto + Standort</td><td>Erfüllung des angeforderten Dienstes und Ihre Einwilligung (Berechtigungen)</td></tr>
 <tr><td>Pilze Ihrer Umgebung anzeigen („Meine Zone“)</td><td>Standort</td><td>Einwilligung</td></tr>
 <tr><td>Sammlung, Punkte und Fortschritt speichern</td><td>Nutzungsdaten</td><td>Erfüllung des Dienstes</td></tr>
@@ -61,7 +65,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>4. Mit wem wir Daten teilen</h2>
 <ul>
-<li><strong>Google (Firebase AI Logic / Gemini-API, App Check):</strong> Ihre <strong>Fotos und Koordinaten</strong> werden an die KI von Google gesendet, <strong>ausschließlich zur Durchführung der Bestimmung</strong> und zum Abruf von Gebietsinformationen. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase-Datenschutz</a> · <a href="https://policies.google.com/privacy" target="_blank">Google</a>.</li>
+<li><strong>Google (Firebase Authentication, Cloud Functions, Gemini-API, App Check):</strong> Google wickelt Ihre Anmeldung ab; Ihre <strong>Fotos und Koordinaten</strong> werden über unseren Server in Google Cloud an die KI von Google gesendet, <strong>nur um die Bestimmung durchzuführen</strong>, und nicht auf dem Server gespeichert. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase-Datenschutz</a> <a href="https://policies.google.com/privacy" target="_blank">Google</a></li>
 <li><strong>Wikimedia Foundation:</strong> die App ruft Referenzbilder ab; dabei kann Ihre IP protokolliert werden. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Wikimedia-Datenschutz</a>.</li>
 <li><strong>Google Play (Abrechnung):</strong> wickelt die Käufe des Premium-Abos ab und bestätigt uns deren Status. Wir greifen nicht auf Ihr Zahlungsmittel zu.</li>
 </ul>
@@ -72,6 +76,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>6. Aufbewahrung</h2>
 <ul>
+<li><strong>Kontodaten und Nutzungszähler:</strong> solange Sie ein Konto haben; sie werden gelöscht, wenn Sie es in der App löschen.</li>
 <li><strong>Lokale Daten:</strong> bis Sie sie löschen oder die App deinstallieren.</li>
 <li><strong>Synchronisierte Daten (Rangliste):</strong> solange Sie teilnehmen; das Löschen Ihres Profils entfernt sie.</li>
 <li><strong>An die KI gesendete Fotos:</strong> werden zur Bestimmung verarbeitet; wir bewahren sie nicht auf einem eigenen Server auf.</li>

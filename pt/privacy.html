@@ -17,7 +17,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <body>
 
 <h1>Política de Privacidade da Mycomi</h1>
-<p class="meta">Última atualização: 25 de junho de 2026</p>
+<p class="meta">Última atualização: 6 de outubro de 2026</p>
 
 <p>Esta Política explica como <strong>Nasib Fahim Fernández</strong> (Espanha) (o «Responsável», «nós») trata os seus dados pessoais quando utiliza a aplicação <strong>Mycomi</strong> (a «App»), uma app de identificação e coleção de cogumelos disponível internacionalmente. Cumprimos o Regulamento (UE) 2016/679 (<strong>RGPD</strong>) e a legislação de proteção de dados aplicável no seu país (ver secção 10).</p>
 
@@ -29,6 +29,8 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>1. Dados que tratamos</h2>
 <table>
 <tr><th>Categoria</th><th>Dados concretos</th><th>Origem</th></tr>
+<tr><td>Dados de conta</td><td>Identificador de utilizador, email, nome e foto da sua conta Google (fornecidos pela Google ao iniciar sessão; nunca vemos a sua palavra-passe)</td><td>Início de sessão com Google</td></tr>
+<tr><td>Contador de utilização</td><td>Número de identificações do mês e estado Premium validado, associados à sua conta</td><td>Gerado ao usar a App</td></tr>
 <tr><td>Dados de perfil</td><td>Nome ou alcunha (opcional), país, avatar (ícone predefinido; não é carregada nenhuma foto de perfil)</td><td>Inseridos por si</td></tr>
 <tr><td>Fotografias</td><td>Imagens de cogumelos que captura ou seleciona</td><td>Câmara ou galeria</td></tr>
 <tr><td>Localização</td><td>Coordenadas GPS no momento da identificação ou da «Minha Zona»</td><td>Permissão de localização</td></tr>
@@ -36,10 +38,11 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <tr><td>Dados técnicos</td><td>Atestação de integridade do dispositivo (Play Integrity/App Check) e IP dos pedidos</td><td>Automático (segurança)</td></tr>
 <tr><td>Dados de subscrição</td><td>Estado do seu plano (gratuito ou Premium) e validação da compra</td><td>Google Play (não recebemos os dados do seu cartão)</td></tr>
 </table>
-<p class="small"><strong>Não</strong> recolhemos email, palavra-passe, telefone, contactos nem <strong>dados de pagamento</strong> (as compras Premium são processadas pelo Google Play; apenas sabemos se a sua subscrição está ativa). A App <strong>não</strong> tem publicidade e <strong>não</strong> vende nem partilha os seus dados para fins comerciais. Usamos <strong>Firebase Crashlytics</strong> (Google) para registar falhas e melhorar a estabilidade, e <strong>Firebase Analytics</strong> (Google) para compreender o uso de forma agregada; podem recolher dados de diagnóstico, eventos de uso e identificadores de dispositivo, processados pela Google e transmitidos cifrados; não são usados para publicidade personalizada e pode <strong>desativar a análise de uso nas Definições</strong>.</p>
+<p class="small"><strong>Não</strong> recolhemos a sua palavra-passe (o início de sessão é gerido pela Google), telefone, contactos nem <strong>dados de pagamento</strong> (as compras Premium são processadas pelo Google Play; apenas sabemos se a sua subscrição está ativa). A App <strong>não</strong> tem publicidade e <strong>não</strong> vende nem partilha os seus dados para fins comerciais. Usamos <strong>Firebase Crashlytics</strong> (Google) para registar falhas e melhorar a estabilidade, e <strong>Firebase Analytics</strong> (Google) para compreender o uso de forma agregada; podem recolher dados de diagnóstico, eventos de uso e identificadores de dispositivo, processados pela Google e transmitidos cifrados; não são usados para publicidade personalizada e pode <strong>desativar a análise de uso nas Definições</strong>.</p>
 
 <h2>2. Onde os seus dados são guardados</h2>
 <ul>
+<li><strong>Conta (Google Firebase):</strong> a sua conta Google, o contador mensal de identificações e o estado Premium validado são guardados no Firebase para que o limite e a subscrição funcionem mesmo que mude de telemóvel.</li>
 <li><strong>No seu dispositivo (principal):</strong> perfil, coleção, fotos e descobertas são guardados <strong>localmente</strong>.</li>
 <li><strong>Sincronização na nuvem (Google Firebase):</strong> a classificação/ranking é uma função da <strong>subscrição Premium</strong>; para os utilizadores Premium, o seu <strong>nome ou alcunha, país, avatar e pontos</strong> são sincronizados e mostrados <strong>publicamente a outros utilizadores</strong> na App.</li>
 </ul>
@@ -50,6 +53,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>3. Finalidades e base jurídica</h2>
 <table>
 <tr><th>Finalidade</th><th>Dados</th><th>Base jurídica (Art. 6.º RGPD e equivalentes)</th></tr>
+<tr><td>Criar e proteger a sua conta e aplicar o limite mensal de identificações</td><td>Dados de conta, contador de utilização</td><td>Execução do serviço e interesse legítimo (prevenção de abusos)</td></tr>
 <tr><td>Identificar o cogumelo da sua foto por IA</td><td>Foto + localização</td><td>Execução do serviço solicitado e o seu consentimento (permissões)</td></tr>
 <tr><td>Mostrar cogumelos da sua zona («Minha Zona»)</td><td>Localização</td><td>Consentimento</td></tr>
 <tr><td>Guardar coleção, pontos e progresso</td><td>Dados de uso</td><td>Execução do serviço</td></tr>
@@ -61,7 +65,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>4. Com quem partilhamos dados</h2>
 <ul>
-<li><strong>Google (Firebase AI Logic / API Gemini, App Check):</strong> as suas <strong>fotos e coordenadas</strong> são enviadas à IA da Google <strong>apenas para realizar a identificação</strong> e obter informação da zona. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacidade da Firebase</a> · <a href="https://policies.google.com/privacy" target="_blank">Google</a>.</li>
+<li><strong>Google (Firebase Authentication, Cloud Functions, API Gemini, App Check):</strong> a Google gere o seu início de sessão; as suas <strong>fotos e coordenadas</strong> passam pelo nosso servidor no Google Cloud até à IA da Google <strong>apenas para realizar a identificação</strong> e não são guardadas no servidor. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacidade da Firebase</a> <a href="https://policies.google.com/privacy" target="_blank">Google</a></li>
 <li><strong>Wikimedia Foundation:</strong> a App pede imagens de referência; pode registar o seu IP. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Privacidade da Wikimedia</a>.</li>
 <li><strong>Google Play (Faturação):</strong> processa as compras da subscrição Premium e confirma-nos o estado. Não acedemos ao seu meio de pagamento.</li>
 </ul>
@@ -72,6 +76,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>6. Conservação</h2>
 <ul>
+<li><strong>Dados de conta e contador de utilização:</strong> enquanto tiver conta; são eliminados quando a apagar na App.</li>
 <li><strong>Dados locais:</strong> até que os apague ou desinstale a App.</li>
 <li><strong>Dados sincronizados (ranking):</strong> enquanto participar; ao apagar o perfil são eliminados.</li>
 <li><strong>Fotos enviadas à IA:</strong> são processadas para a identificação; não as guardamos num servidor próprio.</li>

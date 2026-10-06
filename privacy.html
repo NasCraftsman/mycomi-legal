@@ -17,7 +17,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <body>
 
 <h1>Mycomi Privacy Policy</h1>
-<p class="meta">Last updated: 25 June 2026</p>
+<p class="meta">Last updated: 6 October 2026</p>
 
 <p>This Policy explains how <strong>Nasib Fahim Fernández</strong> (Spain) (the "Controller", "we") processes your personal data when you use the <strong>Mycomi</strong> app (the "App"), an internationally available mushroom identification and collection app. We comply with Regulation (EU) 2016/679 (<strong>GDPR</strong>) and the data protection laws applicable in your country (see section 10).</p>
 
@@ -29,6 +29,8 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>1. Data we process</h2>
 <table>
 <tr><th>Category</th><th>Specific data</th><th>Source</th></tr>
+<tr><td>Account data</td><td>User ID, email address, name and photo of your Google account (provided by Google when you sign in; we never see your password)</td><td>Sign-in with Google</td></tr>
+<tr><td>Usage counter</td><td>Number of identifications this month and verified Premium status, linked to your account</td><td>Generated when using the App</td></tr>
 <tr><td>Profile data</td><td>Name or alias (optional), country, avatar (a predefined icon; no profile photo is uploaded)</td><td>Entered by you</td></tr>
 <tr><td>Photographs</td><td>Images of mushrooms you capture or select</td><td>Camera or gallery</td></tr>
 <tr><td>Location</td><td>GPS coordinates at the time of identification or "My Zone"</td><td>Location permission</td></tr>
@@ -36,10 +38,11 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <tr><td>Technical data</td><td>Device integrity attestation (Play Integrity/App Check) and request IP</td><td>Automatic (security)</td></tr>
 <tr><td>Subscription data</td><td>Your plan status (free or Premium) and purchase validation</td><td>Google Play (we do not receive your card details)</td></tr>
 </table>
-<p class="small">We do <strong>not</strong> collect email, password, phone, contacts or <strong>payment data</strong> (Premium purchases are processed by Google Play; we only learn whether your subscription is active). The App has <strong>no</strong> advertising and does <strong>not</strong> sell or share your data for commercial purposes. We use <strong>Firebase Crashlytics</strong> (Google) to record crashes and improve stability, and <strong>Firebase Analytics</strong> (Google) to understand app usage in aggregate; these may collect diagnostic data, usage events and device identifiers, processed by Google and transmitted encrypted; they are not used for personalized advertising and you can <strong>turn off usage analytics in Settings</strong>.</p>
+<p class="small">We do <strong>not</strong> collect your password (sign-in is handled by Google), phone, contacts or <strong>payment data</strong> (Premium purchases are processed by Google Play; we only learn whether your subscription is active). The App has <strong>no</strong> advertising and does <strong>not</strong> sell or share your data for commercial purposes. We use <strong>Firebase Crashlytics</strong> (Google) to record crashes and improve stability, and <strong>Firebase Analytics</strong> (Google) to understand app usage in aggregate; these may collect diagnostic data, usage events and device identifiers, processed by Google and transmitted encrypted; they are not used for personalized advertising and you can <strong>turn off usage analytics in Settings</strong>.</p>
 
 <h2>2. Where your data is stored</h2>
 <ul>
+<li><strong>Account (Google Firebase):</strong> your Google account, your monthly identification counter and your verified Premium status are stored in Firebase so your limit and subscription work even if you change phones.</li>
 <li><strong>On your device (primary):</strong> profile, collection, photos and finds are stored <strong>locally</strong>.</li>
 <li><strong>Cloud sync (Google Firebase):</strong> the ranking/leaderboard is a <strong>Premium subscription</strong> feature; for Premium users, their <strong>name or alias, country, avatar and points</strong> are synced and shown <strong>publicly to other users</strong> within the App.</li>
 </ul>
@@ -50,6 +53,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 <h2>3. Purposes and legal bases</h2>
 <table>
 <tr><th>Purpose</th><th>Data</th><th>Legal basis (Art. 6 GDPR and equivalents)</th></tr>
+<tr><td>Create and protect your account and apply the monthly identification limit</td><td>Account data, usage counter</td><td>Performance of the service and legitimate interest (abuse prevention)</td></tr>
 <tr><td>Identify the mushroom in your photo using AI</td><td>Photo + location</td><td>Performance of the service you request and your consent (permissions)</td></tr>
 <tr><td>Show mushrooms in your area ("My Zone")</td><td>Location</td><td>Consent</td></tr>
 <tr><td>Save collection, points and progress</td><td>Usage data</td><td>Performance of the service</td></tr>
@@ -61,7 +65,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>4. Who we share data with</h2>
 <ul>
-<li><strong>Google (Firebase AI Logic / Gemini API, App Check):</strong> your <strong>photos and coordinates</strong> are sent to Google's AI <strong>only to perform the identification</strong> and obtain area information. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a> · <a href="https://policies.google.com/privacy" target="_blank">Google</a>.</li>
+<li><strong>Google (Firebase Authentication, Cloud Functions, Gemini API, App Check):</strong> Google handles your sign-in; your <strong>photos and coordinates</strong> pass through our server on Google Cloud to Google's AI <strong>only to perform the identification</strong> and are not stored on the server. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a> <a href="https://policies.google.com/privacy" target="_blank">Google</a></li>
 <li><strong>Wikimedia Foundation:</strong> the App requests reference images; it may log your IP. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Wikimedia Privacy</a>.</li>
 <li><strong>Google Play (Billing):</strong> processes Premium subscription purchases and confirms their status to us. We do not access your payment method.</li>
 </ul>
@@ -72,6 +76,7 @@ a{color:#7a6440}.box{background:#f1ead8;border:1px solid var(--line);border-radi
 
 <h2>6. Retention</h2>
 <ul>
+<li><strong>Account data and usage counter:</strong> while you have an account; they are deleted when you delete it from the App.</li>
 <li><strong>Local data:</strong> until you delete it or uninstall the App.</li>
 <li><strong>Synced data (ranking):</strong> while you participate; deleting your profile removes it.</li>
 <li><strong>Photos sent to the AI:</strong> processed for identification; we do not keep them on a server of our own.</li>
